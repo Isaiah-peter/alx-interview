@@ -19,3 +19,4 @@ def canUnlockAll(boxes):
     print(total)
 
     return len(total) == len(boxes)
+
