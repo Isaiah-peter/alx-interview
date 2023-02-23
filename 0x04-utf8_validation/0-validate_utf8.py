@@ -3,7 +3,7 @@
 
 
 def validUTF8(data):
-     # Variable for counting number of bytes in UTF-8 Character
+    # Variable for counting number of bytes in UTF-8 Character
     number_bytes = 0
 
     # Masks for checking if byte is valid (Starts with 10)
@@ -36,7 +36,7 @@ def validUTF8(data):
             # Every byte that is not the first byte of a character should start
             # with 10, otherwise is not valid
             if not (i & mask1 and not (i & mask2)):
-                    return False
+                return False
 
         # If bytes of character are valid, then the count will decrease with
         # each byte until a new character starts
