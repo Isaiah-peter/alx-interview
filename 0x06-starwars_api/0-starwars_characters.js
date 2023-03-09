@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require('request');
+const request = require("request");
 const filmId = process.argv[2];
 const url = `https://swapi-api.hbtn.io/api/films/${filmId}`;
 
@@ -20,4 +20,3 @@ request(url, async (err, response, body) => {
     });
   }
 });
-
